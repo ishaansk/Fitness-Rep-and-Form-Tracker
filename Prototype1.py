@@ -91,12 +91,8 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
 
         except Exception as e:
             print(f"Error: {e}")
-
-        # Draw UI elements here (same as your code)
-
         # Show the image with the overlay
         cv2.imshow('Pose Estimation', image)
-
 
         # Wait for key press
         key = cv2.waitKey(10)
