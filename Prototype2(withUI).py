@@ -127,7 +127,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
         except Exception as e:
             print(f"Error: {e}")
 
-        # Draw UI components (unchanged)
+        # Draw UI components
         draw_rounded_box(image, (0, 0), (225, 73), (50, 50, 50), 5)
         draw_rounded_box(image, (10, 10), (215, 63), (255, 255, 255), 2)
         draw_text_with_border(image, 'REPS', (30, 25), cv2.FONT_HERSHEY_DUPLEX, 0.4, (255, 255, 255), 1, (0, 0, 0), 2)
@@ -139,7 +139,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
         draw_text_with_border(image, 'Sets Completed:', (10, 90), cv2.FONT_HERSHEY_DUPLEX, 0.5, (255, 255, 255), 1, (0, 0, 0), 2)
         draw_text_with_border(image, str(sets_completed), (160, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 1, (0, 0, 0), 2)
 
-        # Progress bar (unchanged)
+        # Progress bar
         bar_top_left = (550, 50)
         bar_bottom_right = (590, 450)
         bar_height = 400
