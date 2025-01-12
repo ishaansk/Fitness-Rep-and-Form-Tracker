@@ -28,5 +28,5 @@ Angles :
 For Bicep Curls :-
 Landmarks : LEFT_SHOULDER, LEFT_ELBOW, LEFT_WRIST, RIGHT_SHOULDER, RIGHT_ELBOW, RIGHT_WRIST
 Angles :
-  Down : 160
-  Up : 30
+  Down : >160
+  Up : <30
